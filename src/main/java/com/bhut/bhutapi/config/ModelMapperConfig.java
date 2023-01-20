@@ -1,15 +1,15 @@
 package com.bhut.bhutapi.config;
 
-import feign.Logger;
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class FeignClientConfig {
+public class ModelMapperConfig {
 
     @Bean
-    Logger.Level feignLoggerLevel() {
-        return Logger.Level.FULL;
+    public ModelMapper modelMapper() {
+       return new ModelMapper();
     }
 
 }
