@@ -3,13 +3,12 @@ package com.bhut.bhutapi.dto;
 import lombok.Data;
 
 @Data
-public class CarDTO {
+public class CarDTOInput {
 
-    private String _id;
+    private String id;
     private String title;
     private String brand;
     private String price;
     private int age;
-    private int __v;
 
 }
