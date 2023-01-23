@@ -1,13 +1,13 @@
-package com.bhut.bhutapi.controller;
+package com.bhut.bhutapi.controllers;
 
-import com.bhut.bhutapi.dto.CarDTO;
-import com.bhut.bhutapi.dto.CarDTOInput;
-import com.bhut.bhutapi.dto.LogDTO;
-import com.bhut.bhutapi.dto.LogDTOAssembler;
-import com.bhut.bhutapi.model.Log;
-import com.bhut.bhutapi.repository.LogRepository;
-import com.bhut.bhutapi.service.CarService;
-import com.bhut.bhutapi.service.LogService;
+import com.bhut.bhutapi.dtos.CarDTO;
+import com.bhut.bhutapi.dtos.CarDTOInput;
+import com.bhut.bhutapi.dtos.LogDTO;
+import com.bhut.bhutapi.dtos.LogDTOAssembler;
+import com.bhut.bhutapi.models.Log;
+import com.bhut.bhutapi.repositories.LogRepository;
+import com.bhut.bhutapi.services.CarService;
+import com.bhut.bhutapi.services.LogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

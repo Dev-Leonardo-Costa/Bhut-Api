@@ -1,4 +1,4 @@
-package com.bhut.bhutapi.dto;
+package com.bhut.bhutapi.dtos;
 
 import lombok.Getter;
 import lombok.Setter;

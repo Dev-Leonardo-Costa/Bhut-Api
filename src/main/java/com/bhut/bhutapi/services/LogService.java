@@ -1,8 +1,8 @@
-package com.bhut.bhutapi.service;
+package com.bhut.bhutapi.services;
 
-import com.bhut.bhutapi.client.ApiTestBhutClient;
-import com.bhut.bhutapi.model.Log;
-import com.bhut.bhutapi.repository.LogRepository;
+import com.bhut.bhutapi.clients.ApiTestBhutClient;
+import com.bhut.bhutapi.models.Log;
+import com.bhut.bhutapi.repositories.LogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
