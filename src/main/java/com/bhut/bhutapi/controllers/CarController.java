@@ -18,18 +18,13 @@ import java.util.List;
 
 
 @RestController
-@RequiredArgsConstructor
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @RequestMapping("/api")
 public class CarController {
 
-    @Autowired
     private final CarService carService;
-    @Autowired
     private final LogService logService;
-    @Autowired
     private final LogDTOAssembler assembler;
-
-    @Autowired
     private final LogRepository logRepository;
 
     @GetMapping("/listCars")
@@ -48,5 +43,4 @@ public class CarController {
         List<Log> listLog = logService.listLog();
         return assembler.toCollectionModel(listLog);
     }
-
 }

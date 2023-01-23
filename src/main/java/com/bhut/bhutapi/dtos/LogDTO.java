@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 public class LogDTO {
 
     private String id;
-
     private LocalDateTime dateTimeEvent;
     private String idCar;
 

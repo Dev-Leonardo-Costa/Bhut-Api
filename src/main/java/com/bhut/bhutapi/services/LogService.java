@@ -9,14 +9,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Service
-@RequiredArgsConstructor
 public class LogService {
 
-    @Autowired
     private final LogRepository logRepository;
-
-    @Autowired
     private final ApiTestBhutClient apiTestBhut;
 
     public Log saveLog(String idCar) {
