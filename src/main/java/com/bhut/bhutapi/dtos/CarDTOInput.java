@@ -1,16 +1,21 @@
 package com.bhut.bhutapi.dtos;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-
-import java.math.BigDecimal;
 
 @Data
 public class CarDTOInput {
 
-    private String id;
+    @Schema(example = "Fiat Uno")
     private String title;
+
+    @Schema(example = "Fiat")
     private String brand;
-    private BigDecimal price;
+
+    @Schema(example = "15.000")
+    private String price;
+
+    @Schema(example = "2012")
     private int age;
 
 }
