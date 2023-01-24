@@ -17,10 +17,12 @@ public class ConsumerService {
 
     private final ObjectMapper mapper;
 
+    private final WebHookService webHookService;
+
     @RabbitListener(queues = "${queue.name}")
     public void consumer(@Payload Message message) throws IOException {
         var car = mapper.readValue(message.getBody(), CarDTO.class);
-        System.out.println("fila consumida com sucesso -> " + car);
-
+        webHookService.notifyAll(car);
     }
+
 }
