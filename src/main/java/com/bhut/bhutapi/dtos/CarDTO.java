@@ -13,7 +13,7 @@ public class CarDTO implements Serializable {
     private String _id;
     private String title;
     private String brand;
-    private BigDecimal price;
+    private String price;
     private int age;
     private int __v;
 
