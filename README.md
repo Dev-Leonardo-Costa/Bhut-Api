@@ -35,15 +35,15 @@ https://www.mongodb.com/try/download/community
 ````
  mongod 
 ````
-Escolha uma IDe para abrir o projeto, depois vá ate o mongoDB que foi baixado na sua maquina crie uma base de dados com nome ( bhut ) e retorne ate o projeto e der um start.
+Escolha uma IDe para abrir o projeto, depois vá ate o mongoDB que foi baixado na sua maquina crie uma base de dados com nome " bhut " e retorne ate o projeto e der um start.
 ## Testando os ENDPOIND da API
 - Agora vamos testar os endpoints do projeto, se quiser testar com Postman fique a vontade.  
-1. Lista todos os carros registrados na api
+1. Lista todos os carros registrados
 ````
 http://localhost:8080/api/listCars
 ````
 2. Registrar um carro na base de dados da api externa, também podemos ver se foi registrado realmente o carro na 
-api de terceiro olhando na base de dados que criamos com o nome (bhut) la terá uma tabela chamada (log) onde fica registrado o ID do log, DATA/HORA e o ID do carro que foi salvo    
+api de terceiro olhando na base de dados que criamos com o nome " bhut " la terá uma tabela chamada " log " onde fica registrado o ID do log, DATA/HORA e o ID do carro que foi salvo    
 ````
 http://localhost:8080/api/createCar
 ````
@@ -51,4 +51,9 @@ http://localhost:8080/api/createCar
 ````
 http://localhost:8080/api/logs
 ````
+### Segunda opção de teste da API através da url abaixo, copie e coloque na barra de navegação do navegador que abrirar uma documentação e la estara os 3 endpoint para testar 
+````
+http://localhost:8080/swagger-ui/index.html
+````
+
 
