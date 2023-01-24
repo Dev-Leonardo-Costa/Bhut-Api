@@ -1,6 +1,6 @@
-package com.bhut.bhutapi.dto;
+package com.bhut.bhutapi.dtos;
 
-import com.bhut.bhutapi.model.Log;
+import com.bhut.bhutapi.models.Log;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

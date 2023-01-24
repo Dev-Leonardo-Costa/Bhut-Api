@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  rabbitmq:
+    image: rabbitmq:3.8-management
+    environment:
+      RABBITMQ_DEFAULT_USER: "bhut"
+      RABBITMQ_DEFAULT_PASS: "bhut"
+    ports:
+      - '5672:5672'
+      - '15672:15672'

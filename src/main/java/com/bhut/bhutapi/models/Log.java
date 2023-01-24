@@ -1,4 +1,4 @@
-package com.bhut.bhutapi.model;
+package com.bhut.bhutapi.models;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

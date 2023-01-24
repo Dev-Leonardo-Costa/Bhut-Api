@@ -1,22 +1,19 @@
-package com.bhut.bhutapi.service;
+package com.bhut.bhutapi.services;
 
-import com.bhut.bhutapi.client.ApiTestBhutClient;
-import com.bhut.bhutapi.model.Log;
-import com.bhut.bhutapi.repository.LogRepository;
+import com.bhut.bhutapi.clients.ApiTestBhutClient;
+import com.bhut.bhutapi.models.Log;
+import com.bhut.bhutapi.repositories.LogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Service
-@RequiredArgsConstructor
 public class LogService {
 
-    @Autowired
     private final LogRepository logRepository;
-
-    @Autowired
     private final ApiTestBhutClient apiTestBhut;
 
     public Log saveLog(String idCar) {

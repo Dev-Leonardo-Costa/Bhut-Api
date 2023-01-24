@@ -1,4 +1,4 @@
-package com.bhut.bhutapi.config;
+package com.bhut.bhutapi.configs;
 
 import feign.Logger;
 import org.springframework.context.annotation.Bean;

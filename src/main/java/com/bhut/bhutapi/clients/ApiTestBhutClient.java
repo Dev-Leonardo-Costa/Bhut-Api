@@ -1,8 +1,8 @@
-package com.bhut.bhutapi.client;
+package com.bhut.bhutapi.clients;
 
-import com.bhut.bhutapi.config.FeignClientConfig;
-import com.bhut.bhutapi.dto.CarDTO;
-import com.bhut.bhutapi.dto.CarDTOInput;
+import com.bhut.bhutapi.configs.FeignClientConfig;
+import com.bhut.bhutapi.dtos.CarDTO;
+import com.bhut.bhutapi.dtos.CarDTOInput;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
