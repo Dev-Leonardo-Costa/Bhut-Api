@@ -51,9 +51,30 @@ http://localhost:8080/api/createCar
 ````
 http://localhost:8080/api/logs
 ````
-### Segunda opção de teste da API através da url abaixo, copie e coloque na barra de navegação do navegador que abrirar uma documentação e la estara os 3 endpoint para testar 
+4. Cria um WeHook
+````
+http://localhost:8080/webhook/add
+````
+### Segunda opção de teste da API através da url abaixo, copie e coloque na barra do seu navegador que abrirá uma documentação e la estara os 4 endpoint para testar 
 ````
 http://localhost:8080/swagger-ui/index.html
 ````
+### Informação do carro registrado para uma fila usando RabbitMQ, link a baixo esta a url que estara as informações da conexão e da fila que se encontra em " QUEUE " nome é Information_Car ja estara consumida a cada registro de um carro novo a fila 
+````
+http://localhost:15672/
+````
+- Username
+````
+bhut
+````
+- Password
+````
+bhut
+````
+### Para testar o WebHook temos que registrar uma url, usei a Url do site WebHook.site, esse site ja gera um token para realizar os teste processo
+````
+https://webhook.site
+````
+Sempre que fizer a requisição do endpoind api/createCar aparecera o PAYLOAD e tipo POST no site informando que ocorreu tudo bem   
 
 
