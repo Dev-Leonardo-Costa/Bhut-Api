@@ -1,4 +1,4 @@
-# Bhut Tecnoligia - Teste técnico back-end 
+# Bhut Tecnologia - Teste técnico back-end 
 - Resumo: O projeto é uma API para consumir endpoints de uma API externa da empresa bhut-soluções em tecnologia.
 
 ## 💻Funcionalidades da API:
