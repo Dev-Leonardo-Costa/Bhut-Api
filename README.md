@@ -35,7 +35,7 @@ https://www.mongodb.com/try/download/community
 ````
  mongod 
 ````
-Escolher uma IDe para abrir o projeto, criar uma base de dados mongoDB com nome " bhut ", retornar ao projeto e dar o start.
+Escolher uma IDe para abrir o projeto, criar uma base de dados mongoDB com nome " bhut ", retornar ao projeto Rodar o docker-compose para baixar a image da RabbitMQ e dar o start.
 ## Testando os endpoints da API:
 - Iniciar os testes de endpoints do projeto. Para essa ação é necessário utilizar ferramenta de requisições como Postman.
 1. Listar todos os carros registrados.  Para confirmar criação de novo registro a listagem pode ser utilizada:
@@ -60,7 +60,7 @@ http://localhost:8080/swagger-ui/index.html
 ````
 ### Link da URL para informação do carro registrado em uma fila usando RabbitMQ. As informações da conexão e da fila que se encontram em " QUEUE ". O nome é Information_Car e será consumida a cada registro de um carro novo: 
 ````
-http://localhost:15672/
+http://localhost:15672
 ````
 - Username
 ````
