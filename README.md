@@ -16,7 +16,7 @@
 9.  [MongoDB]()
 10. [ModelMapper]()
 11. [Docker]()
-12. [Postman para testes dos endpoint]()
+12. [Postman para testes dos endpoints]()
 13. [Intelij]()
 14. [Maven]()
 15. [RabbitMQ]()
