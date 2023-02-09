@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
+@CrossOrigin
 @Tag(name = "Car", description = "Gerencia os carro")
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
