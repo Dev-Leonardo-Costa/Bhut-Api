@@ -1,4 +1,4 @@
-package com.bhut.bhutapi.dtos;
+package com.bhut.bhutapi.models.dtos;
 
 import com.bhut.bhutapi.models.Log;
 import lombok.RequiredArgsConstructor;

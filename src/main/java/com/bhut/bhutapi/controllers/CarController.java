@@ -1,9 +1,9 @@
 package com.bhut.bhutapi.controllers;
 
-import com.bhut.bhutapi.dtos.CarDTO;
-import com.bhut.bhutapi.dtos.CarDTOInput;
-import com.bhut.bhutapi.dtos.LogDTO;
-import com.bhut.bhutapi.dtos.LogDTOAssembler;
+import com.bhut.bhutapi.models.dtos.CarDTO;
+import com.bhut.bhutapi.models.dtos.CarDTOInput;
+import com.bhut.bhutapi.models.dtos.LogDTO;
+import com.bhut.bhutapi.models.dtos.LogDTOAssembler;
 import com.bhut.bhutapi.models.Log;
 import com.bhut.bhutapi.repositories.LogRepository;
 import com.bhut.bhutapi.services.CarService;

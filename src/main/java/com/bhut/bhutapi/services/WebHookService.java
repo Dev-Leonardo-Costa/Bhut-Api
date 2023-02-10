@@ -1,6 +1,6 @@
 package com.bhut.bhutapi.services;
 
-import com.bhut.bhutapi.dtos.CarDTO;
+import com.bhut.bhutapi.models.dtos.CarDTO;
 import com.bhut.bhutapi.models.WebHook;
 import com.bhut.bhutapi.repositories.WebHookRepository;
 import lombok.RequiredArgsConstructor;

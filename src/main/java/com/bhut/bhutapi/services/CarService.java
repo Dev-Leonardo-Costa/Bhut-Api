@@ -1,8 +1,8 @@
 package com.bhut.bhutapi.services;
 
 import com.bhut.bhutapi.clients.ApiTestBhutClient;
-import com.bhut.bhutapi.dtos.CarDTO;
-import com.bhut.bhutapi.dtos.CarDTOInput;
+import com.bhut.bhutapi.models.dtos.CarDTO;
+import com.bhut.bhutapi.models.dtos.CarDTOInput;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

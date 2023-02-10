@@ -1,4 +1,4 @@
-package com.bhut.bhutapi.dtos;
+package com.bhut.bhutapi.models.dtos;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;

@@ -1,10 +1,9 @@
-package com.bhut.bhutapi.dtos;
+package com.bhut.bhutapi.models.dtos;
 
 import lombok.Data;
 import lombok.ToString;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 @ToString
 @Data

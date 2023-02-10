@@ -1,6 +1,6 @@
 package com.bhut.bhutapi.services;
 
-import com.bhut.bhutapi.dtos.CarDTO;
+import com.bhut.bhutapi.models.dtos.CarDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
