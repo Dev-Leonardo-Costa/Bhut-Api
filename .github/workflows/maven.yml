@@ -9,6 +9,9 @@ on:
 jobs:
   test:
     name: Run Unit testes
+    strategy:
+      matrix:
+        mongodb-version: [ "4.0", "4.2" ]
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +24,11 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B package --file pom.xml
+      - name: Launch MongoDB
+        uses: wbari/start-mongoDB@v0.2
+        with:
+          mongoDBVersion: ${{ matrix.mongodb-version }}
+      - run: echo "done"
 
   build:
     needs: test
@@ -62,8 +70,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name:  bhut
+          application_name: bhut
           environment_name: Bhut-env
-          version_label: 1
+          version_label: 12
           region: us-east-1
           deployment_package: bhut-api-0.0.1-SNAPSHOT.jar
