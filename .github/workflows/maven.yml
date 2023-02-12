@@ -8,64 +8,16 @@ on:
 
 jobs:
   test:
-    name: Run Unit testes
+
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-          cache: maven
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
-
-  build:
-    needs: test
-    name: Build maven package
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK 11
-        uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-          cache: maven
-      - name: Cache local Maven repository
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-
-      - name: Build package war
-        run: mvn -B package -DskipTests --file pom.xml
-      - name: Upload .jar
-        uses: actions/upload-artifact@v3
-        with:
-          name: artifact
-          path: target/bhut-api-0.0.1-SNAPSHOT.jar
-  deploy:
-    needs: build
-    name: Deploy on AWS Elastic Beanstall
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download jar
-        uses: actions/download-artifact@v3
-        with:
-          name: artifact
-      - name: Beanstalk Deploy for JAR
-        uses: DylanBDev/beanstalk-deploy@initial
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          use_existing_version_if_available: true
-          wait_for_environment_recovery: 120
-          application_name:  bhut
-          environment_name: Bhut-env
-          version_label: ${{ github.SHA }}
-          region: us-east-1
-          deployment_package: bhut-api-0.0.1-SNAPSHOT.jar
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        cache: maven
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
