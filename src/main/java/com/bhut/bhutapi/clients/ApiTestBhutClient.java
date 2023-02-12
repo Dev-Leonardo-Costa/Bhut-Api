@@ -19,4 +19,7 @@ public interface ApiTestBhutClient {
     @PostMapping
     CarDTO saveCar(@RequestBody CarDTOInput car);
 
+//    aws_access_key: ${{ secrets.AKIA4ZRGKUGVOSCDF5HZ }}
+//    aws_secret_key: ${{ secrets.e6QXMfczZn0QE8It9TmsU/a2zKjuiWTOlEhkv0cg }}
+
 }
