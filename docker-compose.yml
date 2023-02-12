@@ -8,3 +8,11 @@ services:
     ports:
       - '5672:5672'
       - '15672:15672'
+  mongodb:
+    image: mongo:latest
+    container_name: mongo-container
+    hostname: localhost
+    ports:
+      - '27017:27017'
+
+
