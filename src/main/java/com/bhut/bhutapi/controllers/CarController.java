@@ -39,7 +39,6 @@ public class CarController {
 
     @Operation(summary = "Return car created")
     @PostMapping("/createCar")
-    @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<?> saveCar(@RequestBody CarDTOInput car) {
         return ResponseEntity.status(HttpStatus.CREATED).body(carService.saveCar(car));
     }
@@ -50,4 +49,5 @@ public class CarController {
         List<Log> listLog = logService.listLog();
         return ResponseEntity.ok().body(assembler.toCollectionModel(listLog));
     }
+
 }
