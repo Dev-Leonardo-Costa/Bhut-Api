@@ -40,15 +40,15 @@ Escolher uma IDe para abrir o projeto, criar uma base de dados mongoDB com nome 
 - Iniciar os testes de endpoints do projeto. Para essa ação é necessário utilizar ferramenta de requisições como Postman.
 1. Listar todos os carros registrados.  Para confirmar criação de novo registro a listagem pode ser utilizada:
 ````
-http://localhost:8080/api/listCars
+http://localhost:5000/api/listCars
 ````
 2. Registrar um carro na base de dados da API externa:
 ````
-http://localhost:8080/api/createCar
+http://localhost:5000/api/createCar
 ````
 3. Listar todos os logs que foram armazenados na base de dados:
 ````
-http://localhost:8080/api/logs
+http://localhost:5000/api/logs
 ````
 4. Criar um WebHook:
 ````
@@ -56,7 +56,7 @@ http://localhost:8080/webhook/add
 ````
 ### Opção de teste da API através da URL com documentação e endpoints para testar: 
 ````
-http://localhost:8080/swagger-ui/index.html
+http://localhost:5000/swagger-ui/index.html
 ````
 ### Link da URL para informação do carro registrado em uma fila usando RabbitMQ. As informações da conexão e da fila que se encontram em " QUEUE ". O nome é Information_Car e será consumida a cada registro de um carro novo: 
 ````
