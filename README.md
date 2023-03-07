@@ -52,7 +52,7 @@ http://localhost:5000/api/logs
 ````
 4. Criar um WebHook:
 ````
-http://localhost:8080/webhook/add
+http://localhost:5000/webhook/add
 ````
 ### Opção de teste da API através da URL com documentação e endpoints para testar: 
 ````
