@@ -20,7 +20,7 @@ import java.util.List;
 
 
 @CrossOrigin
-@Tag(name = "Car", description = "Gerencia os carro")
+@Tag(name = "Car", description = "Manages the car")
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @RequestMapping("/api")

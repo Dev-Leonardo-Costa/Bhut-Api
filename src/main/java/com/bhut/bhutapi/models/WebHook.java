@@ -17,7 +17,7 @@ public class WebHook implements Serializable {
 
     @Id
     private String id;
-    @Schema(example = "https://webhook.site/82d76200-d166-49a5-9e48-b0929377e9fd")
+    @Schema(example = "Url of webhook")
     @NotBlank
     private String url;
 
